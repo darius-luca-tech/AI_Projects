@@ -1,0 +1,19 @@
+item { 
+	id:1 
+	name:'shaver' 
+}  
+
+item { 
+        id:2 
+        name:'toothbrush' 
+}  
+
+item { 
+        id:3 
+        name:'wake-up-light'
+}  
+
+item { 
+        id:4 
+        name:'smart-baby-bottle' 
+} 

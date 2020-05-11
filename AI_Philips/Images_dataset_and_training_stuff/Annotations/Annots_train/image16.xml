@@ -1,0 +1,26 @@
+<annotation>
+	<folder>trainFolder</folder>
+	<filename>image16.jpg</filename>
+	<path>/home/luca/Desktop/AI_Philips/Images_dataset/trainFolder/image16.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>smart-baby-bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>313</xmin>
+			<ymin>141</ymin>
+			<xmax>465</xmax>
+			<ymax>434</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>testFolder</folder>
+	<filename>image9.jpg</filename>
+	<path>/home/luca/Desktop/AI_Philips/Images_dataset/testFolder/image9.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>toothbrush</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>462</xmin>
+			<ymin>32</ymin>
+			<xmax>534</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>trainFolder</folder>
+	<filename>image27.jpg</filename>
+	<path>/home/luca/Desktop/AI_Philips/Images_dataset/trainFolder/image27.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>toothbrush</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>487</xmin>
+			<ymin>84</ymin>
+			<xmax>564</xmax>
+			<ymax>410</ymax>
+		</bndbox>
+	</object>
+</annotation>

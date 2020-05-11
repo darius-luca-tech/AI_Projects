@@ -1,0 +1,46 @@
+{% extends "header.html" %}
+{% block main_content %}
+<div class="row">
+	<br><br>
+	<p><h3 align = "center">Input the following data</h3></p>
+	<form method=post action="" >
+	<table align="center">
+		{% for field in form %}
+			<tr>
+			<td>{{ field.label }}</td><td>{{ field }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<p align="center"><input type=submit value=Compute></p>
+	</form>
+</div>
+
+ <div class="row">
+	<p align="center" >
+	{% if result[0] != None %}
+	<p>Tumoarea este: <b><i><u>{{result[0]}}</u></i></b> </p>
+	<p>Acuratetea este: <b><i><u>{{result[1]}}</u></i></b> </p>
+
+	{% endif %}
+	</p>
+	{% if result[0] == "Necanceroasa"%}
+	<div class="row">
+	<img src="{{url_for('static', filename='img/benign.png',width=50)}}" />
+	<p>Citeste mai multe despre cancerul la san<a href="/Masuri_de_precautie/">aici</a></p>
+	</div>
+	<h1><b><i><u>{{result[0]}}</u></i></b> Tumoare Necanceroasa</h1>
+	<div >În cazul în care celulele nu sunt canceroase, tumora este benigne. Acesta nu va invada tesuturile din apropiere sau răspândit în alte zone ale corpului (metastaze). O tumoare benignă este mai puțin îngrijorătoare, cu excepția cazului în care se apasă pe țesuturile din apropiere, nervi, sau vasele de sânge și provocând daune. Fibroame în uter sau lipoame sunt exemple de tumori benigne. Tumori benigne poate fi necesar să fie eliminate prin chirurgie. Ele pot creste foarte mari, uneori cantarind kilograme. Ele pot fi periculoase, ar fi atunci când apar în creier și mulțimea structurile normale în spațiul închis al craniului. Ele pot apăsa pe organe vitale sau bloca canalele. De asemenea, unele tipuri de tumori benigne, ar fi polipi intestinali sunt considerate precanceroase și sunt eliminate pentru a le împiedica să devină maligne. Tumori benigne, de obicei, nu se repete o dată eliminat, dar dacă o fac este, de obicei, în același loc.
+	</div>
+	{% elif result[0] == "Canceroasa"%}
+	<div class="row">
+		<img src="{{url_for('static', filename='img/malignant.jpeg',width=50)}}" />
+		<p>Citeste mai multe despre aceasta problema <a href="/Mai_multe_informatii/">aici</a></p>
+	</div>
+
+	<h1><b><i><u>{{result[0]}}</u></i></b>Tumoare Canceroasa</h1>
+	<div >Malignă înseamnă că tumora este făcută din celulele canceroase și poate invada țesuturile din apropiere. Unele celule canceroase se pot deplasa în sânge sau ganglionilor limfatici, în cazul în care se pot răspândi la alte țesuturi în organism-aceasta se numeste metastaze. Cancerul poate apărea oriunde în organism, inclusiv sân, intestine, plămâni, organe reproductive, sânge, și piele. De exemplu, cancerul de sân începe în țesutul mamar și se poate răspândi la ganglionilor limfatici în axul dacă nu este prins destul de devreme și tratate. Odată ce cancerul de sân sa răspândit la ganglioni limfatici, celulele canceroase pot călători în alte zone ale corpului, ar fi ficatul sau oasele. Celulele cancerului mamar pot forma apoi tumori în acele locații. O biopsie a acestor tumori ar putea arăta caracteristicile tumorii cancerului mamar original.
+	</div>
+	{% endif %}
+ </div>
+
+{% endblock %}

@@ -24,7 +24,7 @@ def check():
         json.dump(data, f, indent=4)
         f.truncate()
 
-    f.close()
+    f.close() 
 
 start_date = date(2020, 4, 3)
 end_date = date(last_date_year, last_date_month, last_date_day - 1)

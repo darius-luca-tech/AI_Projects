@@ -26,19 +26,10 @@ def check():
 
     f.close()
 
-start_date = date(2020, 3, 17)
+start_date = date(2020, 4, 3)
 end_date = date(last_date_year, last_date_month, last_date_day - 1)
 delta = timedelta(days=1)
 
-with open("latestData.json") as f:
-    data = json.load(f)
-    data_wanted = data["currentDayStats"]["countyInfectionsNumbers"]
-
-f.close()
-
-with open("dataWanted.json", "w") as fp:
-    fp.seek(0)
-    json.dump(data_wanted, fp, indent=4)
 
 while(start_date <= end_date):
     # print(type(start_date.strftime("%Y-%m-%d")))
@@ -47,9 +38,20 @@ while(start_date <= end_date):
 
     with open("latestData.json") as f:
         data = json.load(f)
-        data_wanted = data["countyInfectionsNumbers"][date]
-        print(data_wanted)
-    
-    break
+        data_wanted = data["historicalData"][date]["countyInfectionsNumbers"]
 
+    with open("dataWanted.json", "a") as fp:
+        fp.seek(0)
+        json.dump(date, fp)
+        json.dump(data_wanted, fp, indent=4)
+
+with open("latestData.json") as f:
+    data = json.load(f)
+    data_wanted = data["currentDayStats"]["countyInfectionsNumbers"]
+
+f.close()
+
+with open("dataWanted.json", "a") as fp:
+    fp.seek(0)
+    json.dump(data_wanted, fp, indent=4)
 # print(type(data["historicalData"]["2020-10-13"]["parsedOnString"]))

@@ -30,6 +30,9 @@ start_date = date(2020, 4, 3)
 end_date = date(last_date_year, last_date_month, last_date_day - 1)
 delta = timedelta(days=1)
 
+with open("dataWanted.json", "a") as fp:
+    fp.write("{")
+
 
 while(start_date <= end_date):
     # print(type(start_date.strftime("%Y-%m-%d")))
@@ -43,7 +46,9 @@ while(start_date <= end_date):
     with open("dataWanted.json", "a") as fp:
         fp.seek(0)
         json.dump(date, fp)
+        fp.write(":")
         json.dump(data_wanted, fp, indent=4)
+        fp.write(",")
 
 with open("latestData.json") as f:
     data = json.load(f)

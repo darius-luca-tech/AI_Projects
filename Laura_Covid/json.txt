@@ -1,29 +1,29 @@
-lasUpdatedOn 1602669600
-lasUpdatedOnString 14 Octombrie la 13:00
+lasUpdatedOn 1602842400
+lasUpdatedOnString 16 Octombrie la 13:00
 charts
 dailyStats
 contains
 numberInfected
 numberDeceased
 numberCured
-lastUpdatedOn 2020-10-14
+lastUpdatedOn 2020-10-16
 stale false
 quickStats
 contains
 numberInfected
 numberDeceased
 numberCured
-lastUpdatedOn 2020-10-14
+lastUpdatedOn 2020-10-16
 stale false
 counties
 contains
 countyInfectionsNumbers
-lastUpdatedOn 2020-10-14
+lastUpdatedOn 2020-10-16
 stale false
 ageHistogram
 contains
 distributionByAge
-lastUpdatedOn 2020-10-14
+lastUpdatedOn 2020-10-16
 stale false
 averageAge
 contains
@@ -38,6 +38,141 @@ percentageOfChildren
 lastUpdatedOn 2020-03-30
 stale true
 currentDayStats
+parsedOn 1602842400
+parsedOnString 2020-10-16
+fileName 
+complete true
+averageAge 46
+numberInfected 172516
+numberCured 127076
+numberDeceased 5749
+percentageOfWomen 55
+percentageOfMen 41
+percentageOfChildren 4
+distributionByAge
+0-9 3911
+10-19 7337
+20-29 17134
+30-39 27985
+40-49 36847
+50-59 34042
+60-69 23828
+70-79 13634
+>80 7704
+în procesare 94
+countyInfectionsNumbers
+AB 3109
+AR 3570
+AG 5973
+BC 6355
+BH 4407
+BN 1888
+BT 2156
+BV 7411
+BR 2882
+BZ 3187
+CS 1912
+CL 1143
+CJ 5359
+CT 4084
+CV 1613
+DB 4989
+DJ 4127
+GL 5280
+GR 1476
+GJ 2412
+HR 1774
+HD 3114
+IL 1636
+IS 7451
+IF 4356
+MM 2893
+MH 1676
+MS 2952
+NT 4610
+OT 2497
+PH 7583
+SM 1092
+SJ 1331
+SB 3424
+SV 7732
+TR 2216
+TM 5570
+TL 1179
+VS 3975
+VL 3447
+VN 3046
+B 25487
+- 142
+historicalData
+2020-10-15
+parsedOn 1602756000
+parsedOnString 2020-10-15
+fileName 
+complete true
+averageAge 46
+numberInfected 168490
+numberCured 125009
+numberDeceased 5674
+percentageOfWomen 55
+percentageOfMen 41
+percentageOfChildren 4
+distributionByAge
+0-9 3841
+10-19 7110
+20-29 16657
+30-39 27261
+40-49 35947
+50-59 33311
+60-69 23332
+70-79 13367
+>80 7582
+în procesare 82
+countyInfectionsNumbers
+AB 2988
+AR 3504
+AG 5927
+BC 6202
+BH 4301
+BN 1845
+BT 2100
+BV 7295
+BR 2851
+BZ 3156
+CS 1859
+CL 1127
+CJ 5092
+CT 3987
+CV 1580
+DB 4937
+DJ 3994
+GL 5243
+GR 1448
+GJ 2379
+HR 1655
+HD 3034
+IL 1587
+IS 7275
+IF 4284
+MM 2777
+MH 1655
+MS 2846
+NT 4500
+OT 2423
+PH 7438
+SM 1048
+SJ 1259
+SB 3290
+SV 7599
+TR 2090
+TM 5423
+TL 1169
+VS 3915
+VL 3355
+VN 3017
+B 24895
+- 141
+2020-10-14
 parsedOn 1602669600
 parsedOnString 2020-10-14
 fileName 
@@ -64,7 +199,6 @@ countyInfectionsNumbers
 AB 2862
 AR 3423
 AG 5893
-B 24118
 BC 6052
 BH 4248
 BN 1812
@@ -103,8 +237,8 @@ TL 1145
 VS 3849
 VL 3259
 VN 2999
+B 24118
 - 139
-historicalData
 2020-10-13
 parsedOn 1602583200
 parsedOnString 2020-10-13

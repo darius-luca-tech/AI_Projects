@@ -51,12 +51,11 @@ while(start_date <= end_date):
         fp.write(",")
 
 with open("latestData.json") as f:
-    data = json.load(f)
-    data_wanted = data["currentDayStats"]["countyInfectionsNumbers"]
+  data = json.load(f)
+  data_wanted = data["currentDayStats"]["countyInfectionsNumbers"]
 
 f.close()
 
 with open("dataWanted.json", "a") as fp:
-    fp.seek(0)
-    json.dump(data_wanted, fp, indent=4)
-# print(type(data["historicalData"]["2020-10-13"]["parsedOnString"]))
+  fp.seek(0)
+  json.dump(data_wanted, fp, indent=4)
